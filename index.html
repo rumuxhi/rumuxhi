@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egor Degtyarev - Links</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <div class="vanta"></div>
+    <main>
+        <header>
+            <img src="./assets/img/egor.jpg" alt="avatar" />
+            <h1>@rumuxhi</h1>
+        </header>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="./assets/img/homepage.svg" alt="Homepage" width="20" />
+                    Official Website
+                </a>
+            </li>
+            <li>
+                <a href="https://vk.com/rumuxhi/">
+                    <img src="./assets/img/vk.svg" alt="Vkontakte" width="20" />
+                    VKontakte
+                </a>
+            </li>
+            <li>
+                <a href="https://hh.ru/resume/4af1cb21ff0b025ad80039ed1f437073784841">
+                    <img src="./assets/img/hh.svg" alt="HeadHunter" width="20" />
+                    HeadHunter
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/rumuxhi/">
+                    <img src="./assets/img/github.svg" alt="GitHub" width="20" />
+                    GitHub
+                </a>
+             </li>
+        </ul>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+            VANTA.BIRDS({
+                el: ".vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: true,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color2: 0x9100ff,
+                wingSpan: 40.00,
+                separation: 100.00,
+                alignment: 77.00,
+                cohesion: 5.00,
+                quantity: 1.80,
+                backgroundAlpha: 0.00
+            })
+
+            setTimeout(() => {
+                const main = document.querySelector('main')
+                main.style.opacity = 1
+                main.style.filter = 'blur(0px)'
+            }, 1000)
+    </script>
+</body>
+</html>
